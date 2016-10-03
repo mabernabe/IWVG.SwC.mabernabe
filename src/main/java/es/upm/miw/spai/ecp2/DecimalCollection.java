@@ -35,4 +35,13 @@ public class DecimalCollection {
         return higher;
     }
 
+    public double mean() {
+        double sum = 0;
+        int count=0;
+        for (double item : this.collection) {
+            sum += item;
+            count++;
+        }
+        return sum/count;
+    }
 }
