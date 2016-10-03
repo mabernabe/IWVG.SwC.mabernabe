@@ -40,5 +40,12 @@ public class FractionTest {
 	public void testDecimal() {
 		assertEquals(2, fr.getNumerator() / fr.getDenominator());
 	}
+	
+	@Test
+	public void testIsProper(){
+        assertTrue(new Fraction(1, 2).isProper());
+        assertFalse(new Fraction(2, 1).isProper());
+        assertFalse(new Fraction(1, 1).isProper());
+	}
 
 }
