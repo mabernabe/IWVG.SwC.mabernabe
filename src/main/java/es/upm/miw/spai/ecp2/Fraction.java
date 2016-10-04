@@ -69,5 +69,13 @@ public class Fraction {
         int result2=fraction1.getDenominator()*fraction2.getNumerator();
         return result1==result2;
     }
+    public boolean  isGreaterThan (Fraction other){
+  	  double result = other.getNumerator()/other.getDenominator();
+  	  if(this.decimal()<result){
+  		  return true;
+  	  }
+  	  else 
+  		  return false;
+    }
     
 }
