@@ -44,5 +44,8 @@ public class UserTest {
 	public void testInitials() {
         assertEquals("M.", this.us.initials());
 	}
-
+	@Test
+	 public void upperNameTest() {
+		assertEquals("MIGUEL",us.upperName());
+   }
 }
