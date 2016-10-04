@@ -48,4 +48,12 @@ public class FractionTest {
         assertFalse(new Fraction(1, 1).isProper());
 	}
 
+	@Test
+    public void testIsEquivalente() {
+	    Fraction fraction1= new Fraction(3, 2);
+	    Fraction fraction2= new Fraction(4, 2);
+	    assertTrue(fraction2.isEquivalente(fr, fraction2));
+	    assertFalse(fraction1.isEquivalente(fr, fraction1));
+	    
+    }
 }

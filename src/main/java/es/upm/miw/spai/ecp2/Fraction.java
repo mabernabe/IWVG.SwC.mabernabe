@@ -64,4 +64,10 @@ public class Fraction {
         return (numerator < denominator);
     }
     
+    public boolean isEquivalente(Fraction fraction1, Fraction fraction2){
+        int result1=fraction1.getNumerator()*fraction2.getDenominator();
+        int result2=fraction1.getDenominator()*fraction2.getNumerator();
+        return result1==result2;
+    }
+    
 }
